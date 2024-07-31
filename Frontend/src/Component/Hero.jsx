@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Hero() {
   return (
     <div>
@@ -106,3 +105,5 @@ function Hero() {
 }
 
 export default Hero
+
+

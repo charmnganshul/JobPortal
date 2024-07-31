@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Hero() {
   return (
     <div className='h-[100vh] w-[100%] flex justify-center items-center'>
@@ -104,3 +103,5 @@ function Hero() {
 }
 
 export default Hero
+
+

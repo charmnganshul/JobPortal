@@ -2,10 +2,9 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div>
     <div className='h-[100vh] w-[100%] flex justify-center items-center'>
     <img className='h-full w-full object-cover object-center' src='https://jobes-nextjs.vercel.app/_next/static/media/h1-hero-bg.b5f38767.png'></img> 
-    <div className='h-full w-full bg-black fixed left-0 top-0 opacity-55 flex justify-center items-center'></div>  
+    <div className='h-full w-full bg-black absolute left-0 top-[17vh] opacity-55 flex justify-center items-center'></div>  
     <div className=' w-[100%] absolute flex flex-col  justify-center items-center gap-2 '>
     <h1 className='text-white  text-[70px]  font-bold'>Your Career’s <span className='text-[#00A7AC]'>Opportunity</span> .</h1>
     <p className='text-white text-[19px]'>2400 Peoples are daily search in this portal, 100 user added job portal!</p>
@@ -100,7 +99,6 @@ function Hero() {
 
     </div> */}
     </div> 
-    </div>
     </div>
   )
 }

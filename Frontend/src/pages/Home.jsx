@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from '../component/Header'
-
+import JobCategory from '../component/JobCategory'
 function Home() {
   return (
   <main>
-<Header></Header>
+<Header/>
+<JobCategory/>
   </main>
   )
 }

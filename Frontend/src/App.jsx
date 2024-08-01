@@ -5,6 +5,8 @@ import Login from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import JobListingPage from "./pages/JobListingPage";
 import PostJobPage from "./pages/PostJobPage";
+import JobCategoryPage from "./pages/JobCategoryPage";
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
         <Route path="/signuppage" element={<SignUpPage />} />
         <Route path="/joblisting" element={<JobListingPage />} />
         <Route path="/postjob" element={<PostJobPage />} />
+        <Route path="/jobcategory" element={<JobCategoryPage />} />
       </Routes>
     </>
   );

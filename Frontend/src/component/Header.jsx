@@ -31,7 +31,8 @@ const Header = () => {
             <a href="#find-jobs" className="text-gray-700 hover:text-teal-500 ">Find Jobs</a>
             {/* Dropdown example */}
             <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden group-hover:block">
-              <a href="#link1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Link 1</a>
+              <button onClick={()=>navigate("/jobcategory")} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Category
+              </button>
               <a href="#link2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Link 2</a>
             </div>
           </div>

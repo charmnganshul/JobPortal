@@ -2,25 +2,18 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-
+import PostAJob from "../component/PostAJob"
+import Filter from "../component/Filter"
 const JobListingPage = () => {
   return (
-    <div className="container mx-auto py-16">
+    <div>
       <Header></Header>
-      <div className="p-24">
-        <h2 className="text-3xl font-bold text-center mb-12">Job Listings</h2>
-        <div className="flex justify-between">
-          <div className="w-1/4">
+      <PostAJob/>
 
-{/* {Filter section}------- */}
-
-          </div>
-          <div className="w-3/4">
-{/* {Job post}------------         \ */}
- </div>
-        </div>
+      <div className="px-16 py-8">
+      <Filter/>
       </div>
-
+     
       <Footer />
     </div>
   );

@@ -57,7 +57,7 @@ const Header = () => {
               <span className="absolute top-0 right-0 h-4 w-4 bg-red-500 text-white rounded-full text-xs flex items-center justify-center">5</span>
             </button>
           <button onClick={()=>navigate("/login")} className="text-gray-700 border px-4 py-2 rounded hover:bg-teal-500">Sign In</button>
-        <button className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 flex items-center justify-center gap-2">Post Job <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+        <button onClick={()=>navigate("/postjob")} className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 flex items-center justify-center gap-2">Post Job <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
 
         </div>
 </div>

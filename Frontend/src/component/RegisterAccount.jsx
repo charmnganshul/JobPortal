@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { FaUser, FaEnvelope, FaLock, FaGoogle, FaFacebookF } from 'react-icons/fa';
 

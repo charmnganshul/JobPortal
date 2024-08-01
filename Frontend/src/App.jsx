@@ -5,6 +5,9 @@ import JobCategory from './component/JobCategory'
 import RegisterAccount from './component/RegisterAccount'
 import PostAJob from './component/PostAJob'
 import JobPostForm from './component/JobPostForm'
+import JobCard from './component/JobCard'
+import Filter from './component/Filter'
+
 
 
 function App() {
@@ -17,6 +20,10 @@ function App() {
         <Route path='/register' element={<RegisterAccount/>}></Route>
         <Route path='/postAJob' element={<PostAJob/>}></Route>
         <Route path='/jobform' element={<JobPostForm/>}></Route>
+        <Route path='/jobcard' element={<JobCard/>}></Route>
+        <Route path='/filter' element={<Filter/>}></Route>
+        
+
  
    
       </Routes>

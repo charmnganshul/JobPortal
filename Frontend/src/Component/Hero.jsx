@@ -45,7 +45,7 @@ function Hero() {
 
     </div>.
   
-    <div className="flex items-center w-[60%] space-x-4 p-4 bg-gray-100 rounded-md">
+    <div className="flex items-center w-[60%] space-x-4 p-4 bg-gray-100 rounded-md border hover:border-teal-500">
       <div className="flex items-center w-[40%] h-[7vh] bg-gray-200 border rounded-md shadow-sm">
         <span className="flex items-center px-3 pt-[8px]">
           {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -57,7 +57,7 @@ function Hero() {
         <input
           type="text"
           placeholder="Job Title"
-          className="px-3 py-2 w-full  bg-gray-200 outline-none border-none"
+          className="px-3 py-2 w-full  bg-gray-200 outline-none border-none "
         />
       </div>
       <div className="flex items-center h-[7vh] w-[40%] bg-gray-200 border rounded-md shadow-sm">

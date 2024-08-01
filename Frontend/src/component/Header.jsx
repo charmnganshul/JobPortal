@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="bg-white shadow-md py-4">
       <div className=" mx-auto flex justify-between items-center px-10">
         {/* Logo */}
-        <div className="flex items-center">
+        <div onClick={()=>navigate("/")} className="flex items-center">
           <img
             src="https://jobes-nextjs.vercel.app/assets/images/header1-logo.svg"
             alt="Logo"
@@ -24,9 +26,9 @@ const Header = () => {
         </div>
 <div className=" flex justify-between item-center">
 <nav className="flex items-center gap-20 text-[1.2rem]">
-          <a href="#home" className="text-gray-700 hover:text-teal-500">Home</a>
+          <a onClick={()=>navigate("/")} href="#home" className="text-teal-700 font-semibold hover:text-gray-500 border hover:border-gray-500 px-6 ">Home</a>
           <div className="relative group">
-            <a href="#find-jobs" className="text-gray-700 hover:text-teal-500">Find Jobs</a>
+            <a href="#find-jobs" className="text-gray-700 hover:text-teal-500 ">Find Jobs</a>
             {/* Dropdown example */}
             <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden group-hover:block">
               <a href="#link1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Link 1</a>
@@ -54,7 +56,7 @@ const Header = () => {
               <i className="fa fa-bell text-gray-700"></i>
               <span className="absolute top-0 right-0 h-4 w-4 bg-red-500 text-white rounded-full text-xs flex items-center justify-center">5</span>
             </button>
-          <button className="text-gray-700 border px-4 py-2 rounded hover:bg-gray-100">Sign In</button>
+          <button onClick={()=>navigate("/login")} className="text-gray-700 border px-4 py-2 rounded hover:bg-teal-500">Sign In</button>
         <button className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 flex items-center justify-center gap-2">Post Job <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
 
         </div>

@@ -2,9 +2,10 @@ import React, { useRef, useEffect, useState } from 'react';
 import { useThemeProvider } from '../utils/ThemeContext';
 
 import { chartColors } from './ChartjsConfig';
-import {
-  Chart, BarController, BarElement, LinearScale, TimeScale, Tooltip, Legend,
-} from 'chart.js';
+// import {
+//   Chart, BarController, BarElement, LinearScale, TimeScale, Tooltip, Legend,
+// } from 'chart.js';
+import {Chart, BarController, BarElement, Tooltip, Legend} from 'chart.js'
 import 'chartjs-adapter-moment';
 
 // Import utilities

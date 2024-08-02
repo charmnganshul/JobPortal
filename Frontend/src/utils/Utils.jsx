@@ -1,4 +1,6 @@
+// import resolveConfig from 'tailwindcss/resolveConfig'
 import resolveConfig from 'tailwindcss/resolveConfig'
+// import tailwindConfigFile from '@tailwindConfig'
 import tailwindConfigFile from '@tailwindConfig'
 
 export const tailwindConfig = () => {

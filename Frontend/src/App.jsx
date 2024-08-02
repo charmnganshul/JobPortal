@@ -8,10 +8,6 @@ import JobPostForm from './component/JobPostForm'
 import JobCard from './component/JobCard'
 import Filter from './component/Filter'
 import JobCategoryAll from './component/JobCategoryAll'
-
-
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 function App() {
@@ -24,11 +20,7 @@ function App() {
         <Route path='/jobform' element={<JobPostForm/>}></Route>
         <Route path='/jobcard' element={<JobCard/>}></Route>
         <Route path='/filter' element={<Filter/>}></Route>
-        <Route path='/categoryall' element={<JobCategoryAll/>}></Route>
-        
-
- 
-   
+        <Route path='/categoryall' element={<JobCategoryAll/>}></Route>  
         <Route path="/" element={<Home />} />
       </Routes>
     </>

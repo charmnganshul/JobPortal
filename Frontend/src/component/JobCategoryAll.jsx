@@ -2,6 +2,8 @@ import React from 'react'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 function JobCategoryAll() {
+
+    
   return (
     <div>
        <div className=' w-[100%]  py-16 px-28 flex  flex-col gap-7 justify-center items-center'>

@@ -2,10 +2,12 @@ import React from 'react';
 import { FaMapMarkerAlt, FaDollarSign, FaClock, FaBookmark, FaBriefcase } from 'react-icons/fa';
 const Filter = () => {
   return (
-    <div className="flex p-6 bg-gray-100 min-h-screen">
+    <div className="flex p-6  min-h-screen">
       {/* Filters Section */}
-      <div className="w-1/4 bg-white p-6 rounded-lg shadow-lg">
+      <div  className='w-[30%] bg-gray-100 p-[20px]'>
+      <div className="w-[100%]   rounded-lg ">
         <div className="mb-8">
+          <div  className=' bg-white p-[10px] shadow'>
           <h3 className="text-xl font-bold mb-4">Job Category</h3>
           <ul className="space-y-2">
             <li className="flex items-center">
@@ -41,9 +43,10 @@ const Filter = () => {
               Non-Profit Org. (100)
             </li>
           </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-bold mb-4">Type of Employments</h3>
+        <div  className='bg-white p-[10px] shadow'>
+        <h3 className="text-xl font-bold mb-4">Type of Employments</h3>
           <ul className="space-y-2">
             <li className="flex items-center">
               <input type="radio" name="employment" className="mr-2" />
@@ -76,10 +79,12 @@ const Filter = () => {
           </ul>
         </div>
       </div>
+      </div>
+      
 
       {/* Job Card Section */}
       <div className=' w-[75%] p-[10px] flex  flex-col gap-5'>
-      <div className=' w-[100%] flex  justify-between'>
+      <div className=' w-[100%] flex  justify-between pl-[10px]'>
       <label className='text-gray-500 '>Showing results 10 in 200 jobs list</label>
         <div className="flex items-center h-[2vh]  mt-[8px]  gap-5 ">
         <select className="px-3 py-2 w-[100%] text-[14px] font-thin text-gray-600 outline-none shadow bg-white f">
@@ -95,16 +100,17 @@ const Filter = () => {
    </div>
   </div>
       <div className='h-[100vh] w-[100%] border'>
-      <div className="w-[35%] p-6">
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-          <div className="flex justify-between items-start">
+      <div className="w-[38%] p-6">
+        <div className="bg-white p-3  rounded-lg shadow-lg">
+          <div className="flex justify-between items-start relative ">
             <div>
-              <img src="path/to/image.png" alt="Job" className="h-16 w-16 rounded-full mb-4" />
+              <img  src="https://jobes-nextjs.vercel.app/assets/images/bg/job-list-1.png" alt="Job" className="h-full w-full mb-4" />
+              <FaBookmark className="text-white text-xl absolute right-2 top-2" />
               <h2 className="text-xl font-bold mb-2">WordPress Developer</h2>
               <p className="text-gray-600 mb-1">Bistro Tech Ltd</p>
               <p className="text-gray-600">Deadline: 2 April, 2023</p>
             </div>
-            <FaBookmark className="text-gray-400 text-xl" />
+          
           </div>
           <div className="mt-4">
             <div className="flex items-center mb-2">

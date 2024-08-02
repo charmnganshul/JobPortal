@@ -1,27 +1,27 @@
-import React from 'react'
-import './App.css'
-import { Routes,Route } from 'react-router-dom'
-import JobCategory from './component/JobCategory'
-import RegisterAccount from './component/RegisterAccount'
-import PostAJob from './component/PostAJob'
-import JobPostForm from './component/JobPostForm'
-import JobCard from './component/JobCard'
-import Filter from './component/Filter'
-import JobCategoryAll from './component/JobCategoryAll'
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Login from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
+import JobListingPage from "./pages/JobListingPage";
+import PostJobPage from "./pages/PostJobPage";
+import JobCategoryPage from "./pages/JobCategoryPage";
+import CompanyListing from "./pages/CompanyListing";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path='/jobcategory' element={<JobCategory/>}></Route>
-        <Route path='/register' element={<RegisterAccount/>}></Route>
-        <Route path='/postAJob' element={<PostAJob/>}></Route>
-        <Route path='/jobform' element={<JobPostForm/>}></Route>
-        <Route path='/jobcard' element={<JobCard/>}></Route>
-        <Route path='/filter' element={<Filter/>}></Route>
-        <Route path='/categoryall' element={<JobCategoryAll/>}></Route>  
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signuppage" element={<SignUpPage />} />
+        <Route path="/joblisting" element={<JobListingPage />} />
+        <Route path="/postjob" element={<PostJobPage />} />
+        <Route path="/jobcategory" element={<JobCategoryPage />} />
+        <Route path="/companylisting" element={<CompanyListing />} />
+        <Route path="/candidate-dashboard" element={<Dashboard />} />
+
       </Routes>
     </>
   );

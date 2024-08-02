@@ -10,12 +10,13 @@ import Filter from './component/Filter'
 import JobCategoryAll from './component/JobCategoryAll'
 
 
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
- 
-
   return (
-    <div>
+    <>
       <Routes>
         <Route path='/jobcategory' element={<JobCategory/>}></Route>
         <Route path='/register' element={<RegisterAccount/>}></Route>
@@ -28,9 +29,10 @@ function App() {
 
  
    
+        <Route path="/" element={<Home />} />
       </Routes>
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

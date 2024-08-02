@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Tooltip from '../../components/Tooltip';
+import Tooltip from '../../component/Tooltip';
 import { chartAreaGradient } from '../../charts/ChartjsConfig';
 import RealtimeChart from '../../charts/RealtimeChart';
 

@@ -1,11 +1,10 @@
-// import resolveConfig from 'tailwindcss/resolveConfig'
-import resolveConfig from 'tailwindcss/resolveConfig'
-// import tailwindConfigFile from '@tailwindConfig'
-import tailwindConfigFile from '@tailwindConfig'
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfigFile from '@tailwindConfig';
 
+// Use .default because of CommonJS export
 export const tailwindConfig = () => {
-  return resolveConfig(tailwindConfigFile)
-}
+  return resolveConfig(tailwindConfigFile.default);
+};
 
 export const hexToRGB = (h) => {
   let r = 0;

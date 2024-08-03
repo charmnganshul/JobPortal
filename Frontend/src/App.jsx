@@ -8,6 +8,15 @@ import PostJobPage from "./pages/PostJobPage";
 import JobCategoryPage from "./pages/JobCategoryPage";
 import CompanyListing from "./pages/CompanyListing";
 
+ import React from 'react'
+ import './App.css'
+ import { Routes,Route } from 'react-router-dom'
+import Hero from './Component/Hero'
+import Login from './Component/Login'
+import JobLishting from './Component/JobLishting'
+import JobDetail from './Component/JobDetail'
+
+ 
 function App() {
   return (
     <>

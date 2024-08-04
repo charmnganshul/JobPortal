@@ -1,45 +1,45 @@
 import React from "react";
 function JobDetail() {
   return (
-    <div className="flex  gap-2 p-[10px]">
-      <div className="h-[100vh] w-[100%] flex  text-[13px] flex-col gap-2">
+   <div className="flex  gap-2 px-[50px] py-[5%]">
+      <div className=" w-[100%] flex  text-[12px] flex-col gap-2">
         <div className="w-[100%] flex gap-2  justify-center ">
-          <div className=" flex w-[30%] items-center shadow gap-3 pl-[5px]">
+          <div className=" flex w-[30%] items-center gap-3 pl-[23px]">
             <img
-              className="h-[50px] w-[50px] rounded-full"
+              className="h-[30px] w-[30px] rounded-full"
               src="https://jobes-nextjs.vercel.app/assets/images/bg/company-logo/company-01.png"
             ></img>
             <div className="flex flex-col">
-              <label>Senior UI &UX Engineer</label>
-              <label>Bistro.Tech Group Ltd</label>
+              <label className="font-bold">Senior UI &UX Engineer</label>
+              <label className="text-gray-400 font-semibold">Bistro.Tech Group Ltd</label>
             </div>
           </div>
-          <div className="w-[35%]  flex flex-col p-[10px] shadow">
+          <div className="w-[35%]  flex flex-col p-[10px] ">
             <div className="flex items-center gap-2">
               <i class="fa fa-map-marker text-[#00A7AC]" aria-hidden="true"></i>
-              <h1>Location: Dhaka,Bangladesh</h1>
+              <h1 className="font-semibold">Location: <span className="text-gray-400">Dhaka,Bangladesh</span></h1>
             </div>
             <div className="flex items-center gap-2">
               <i class="fa fa-square-o text-[#00A7AC]" aria-hidden="true"></i>
-              <h1>Category: Creative Design</h1>
+              <h1 className="font-semibold">Category: <span className="text-gray-400">Creative Design</span></h1>
             </div>
           </div>
-          <div className="w-[35%]  flex flex-col p-[10px] shadow">
+          <div className="w-[35%]  flex flex-col p-[10px] ">
             <div className="flex items-center gap-2">
               <i
                 class="fa fa-envelope-o  text-[#00A7AC]"
                 aria-hidden="true"
               ></i>
-              <h1>job type: Full Time</h1>
+              <h1 className="font-semibold">job type: <span className="text-gray-400">Full Time</span></h1>
             </div>
             <div className="flex items-center gap-2">
               <i class="fa fa-money  text-[#00A7AC]" aria-hidden="true"></i>
-              <h1>Salary: $40k-$78K/per Month</h1>
+              <h1 className="font-semibold">Salary: <span className="text-gray-400">$40k-$78K/per Month</span></h1>
             </div>
           </div>
         </div>
-        <div className="p-6 bg-gray-100 w-[100%]  text-[14px] text-gray-800">
-          <h1 className="text-2xl font-bold mb-4 text-[20px]">
+        <div className="p-6  w-[100%]  text-[13px] text-gray-800">
+          <h1 className="text-2xl font-bold mb-4 text-[18px]">
             Job Description:
           </h1>
           <p className="mb-4">
@@ -49,7 +49,7 @@ function JobDetail() {
             visual design, and interactivity of the user interface.
           </p>
 
-          <h2 className="text-xl  mb-2 font-bold">Job Responsibility:</h2>
+          <h2 className="text-[18px]  mb-2 font-bold">Job Responsibility:</h2>
           <ul className="list-disc list-inside mb-4">
             <li>
               Collaborating with cross-functional teams: UI/UX designers often
@@ -79,16 +79,16 @@ function JobDetail() {
               new software or web applications.
             </li>
           </ul>
-          <h2 className="text-xl font-bold mb-2">Educational Requirements:</h2>
+          <h2 className="text-[18px] font-bold mb-2">Educational Requirements:</h2>
           <ul className="list-disc list-inside mb-4">
             <li>Bachelor degree to complete any reputational university.</li>
             <li>Bachelor degree to complete any reputational university.</li>
           </ul>
 
-          <h2 className="text-xl font-bold mb-2">Experiences:</h2>
+          <h2 className="text-[18px] font-bold mb-2">Experiences:</h2>
           <p className="mb-4">2-3 Years in this field.</p>
 
-          <h2 className="text-xl font-bold mb-2">Main Duties:</h2>
+          <h2 className="text-[18px] font-bold mb-2">Main Duties:</h2>
           <ul className="list-disc list-inside mb-4">
             <li>
               Gathering and analyzing user requirements to inform the design of
@@ -108,7 +108,7 @@ function JobDetail() {
               interface is aligned with business and technical requirements.
             </li>
           </ul>
-          <h2 className="text-xl font-bold mb-2">Extra Benefits:</h2>
+          <h2 className="text-[18px] font-bold mb-2">Extra Benefits:</h2>
           <ul className="list-disc list-inside mb-4">
             <li>Any health care.</li>
             <li>Yearly performance bonus.</li>
@@ -117,23 +117,24 @@ function JobDetail() {
           </ul>
         </div>
       </div>
-      <div className="w-[45%] flex flex-col gap-3 p-[10px]">
+      <div className="w-[45%] flex flex-col gap-3 ">
         <div className="w-[100%] flex gap-2 ">
-          <div className="h-[6vh] w-[40%]   flex gap-2 justify-center items-center shadow">
+          <div className="h-[6vh] w-[40%]   flex gap-2 justify-center items-center ">
             <label className="hover: text-[#00A7AC]">SaveJob</label>
             <div className="h-[30px] w-[30px] hover:bg-[#00A7AC] text-white rounded-full flex justify-center items-center bg-gray-400">
               <i class="fa fa-bookmark" aria-hidden="true"></i>
             </div>
           </div>
-          <button class="group relative w-40 overflow-hidden border border-[#00A7AC] bg-white text-[#00A7AC] shadow transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#00A7AC] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#00A7AC] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+          <div></div>
+          <button  class="group  relative w-40  overflow-hidden border border-[#00A7AC] bg-white text-[#00A7AC]  transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#00A7AC] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#00A7AC] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
             <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#00A7AC] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#00A7AC] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-            <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-[5vh] w-[70%] items-center justify-center group-hover:text-white">
+            <span class="absolute bottom-0 left-4 right-0 top-0 z-10 flex h-[5vh] w-[70%] items-center justify-center group-hover:text-white pl-[20px] text-[14px]">
               Apply Position
             </span>
           </button>{" "}
         </div>
         <div className="h-[1px] w-[100%]bg-[#00A7AC]"></div>
-        <div className="p-6 bg-white shadow-md rounded-md text-[14px] text-gray-800">
+        <div className="p-6 h-[120vh] rounded-md text-[13px] text-gray-800">
           <h2 className="text-lg font-bold mb-4">Job Summary:</h2>
           <ul className="list-none mb-4 space-y-2">
             <li>
@@ -202,7 +203,7 @@ function JobDetail() {
           </div>
         </div>
       </div>
-    </div>
+    </div>
   );
 }
 export default JobDetail;

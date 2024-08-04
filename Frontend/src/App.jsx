@@ -7,16 +7,8 @@ import JobListingPage from "./pages/JobListingPage";
 import PostJobPage from "./pages/PostJobPage";
 import JobCategoryPage from "./pages/JobCategoryPage";
 import CompanyListing from "./pages/CompanyListing";
+import JobDetailPage from "./pages/JobDetailPage";
 
- import React from 'react'
- import './App.css'
- import { Routes,Route } from 'react-router-dom'
-import Hero from './Component/Hero'
-import Login from './Component/Login'
-import JobLishting from './Component/JobLishting'
-import JobDetail from './Component/JobDetail'
-
- 
 function App() {
   return (
     <>
@@ -28,6 +20,7 @@ function App() {
         <Route path="/postjob" element={<PostJobPage />} />
         <Route path="/jobcategory" element={<JobCategoryPage />} />
         <Route path="/companylisting" element={<CompanyListing />} />
+        <Route path="/jobDetail" element={<JobDetailPage />} />
       </Routes>
     </>
   );

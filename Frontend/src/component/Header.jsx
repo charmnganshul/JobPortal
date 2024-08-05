@@ -137,14 +137,14 @@ const Header = () => {
                       className="block
                        px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      Comapny Listing{" "}
+                      Company Listing{" "}
                     </button>
-                    <a
-                      href="#link2"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    <button
+                      onClick={()=>navigate('/companydashboard')}
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[16px]"
                     >
-                      Link 2
-                    </a>
+                      Company Dashboard
+                    </button>
                   </div>
                 )}
               </div>

@@ -11,6 +11,12 @@ import JobDetailPage from "./pages/JobDetailPage";
 import FaqPages from "./pages/FaqPages";
 import ContactUsPage from "./pages/ContactUsPage";
 import DashBoardCandi from "./pages/DashBoardCandi";
+import CompanyDashboardPage from "./pages/CompanyDashboardPage";
+import CompanyProfilePage from "./pages/CompanyProfilePage";
+import CompanyJobList from "./pages/CompanyJobList";
+import PlansSubsriptionPage from "./pages/PlansSubsriptionPage";
+
+
 
 function App() {
   return (
@@ -27,6 +33,12 @@ function App() {
         <Route path="/faqpages" element={<FaqPages/>} />
         <Route path="/contactus" element={<ContactUsPage/>} />
         <Route path="/candidatedashboard" element={<DashBoardCandi/>} />
+        <Route path="/companydashboard" element={<CompanyDashboardPage/>} />
+        <Route path="/companyprofile" element={<CompanyProfilePage/>} />
+        <Route path="/companyjoblist" element={<CompanyJobList/>} />
+        <Route path="/plansubscription" element={<PlansSubsriptionPage/>} />
+
+
       </Routes>
     </>
   );

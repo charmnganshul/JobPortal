@@ -7,7 +7,8 @@ import JobListingPage from "./pages/JobListingPage";
 import PostJobPage from "./pages/PostJobPage";
 import JobCategoryPage from "./pages/JobCategoryPage";
 import CompanyListing from "./pages/CompanyListing";
-import Dashboard from "./pages/Dashboard";
+
+import JobDetail from "./pages/JobDetail";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/postjob" element={<PostJobPage />} />
         <Route path="/jobcategory" element={<JobCategoryPage />} />
         <Route path="/companylisting" element={<CompanyListing />} />
-        <Route path="/candidate-dashboard" element={<Dashboard />} />
+
+        <Route path="/jobdetail" element={<JobDetail />} />
 
       </Routes>
     </>

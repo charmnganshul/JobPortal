@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from '../component/Header'
 import PostAJob from '../component/PostAJob'
 import Footer from '../component/Footer'
 
 function CompanyDetailPage() {
   return (
     <div className='flex flex-col gap-10' >
+      <Header/>
         <PostAJob/>
         <div className=' w-[100%] flex justify-center items-center'>
         <div className='w-[70%] flex flex-col' >

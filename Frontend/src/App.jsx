@@ -13,6 +13,10 @@ import ContactUsPage from "./pages/ContactUsPage";
 import DashBoardCandi from "./pages/DashBoardCandi";
 import CompanyDetailPage from "./pages/CompanyDetailPage";
 import EditResumePage from "./pages/EditResumePage";
+import PlanSubcriptionpage from "./pages/PlansSubsriptionPage";
+import CompanyJobList from "./pages/CompanyJobList";
+import CompanyProfilePage from "./pages/CompanyProfilePage";
+import CompanyDashboardPage from "./pages/CompanyDashboardPage";
 
 function App() {
   return (
@@ -26,13 +30,18 @@ function App() {
         <Route path="/jobcategory" element={<JobCategoryPage />} />
         <Route path="/companylisting" element={<CompanyListing />} />
         <Route path="/jobDetail" element={<JobDetailPage />} />
-        <Route path="/faqpages" element={<FaqPages/>} />
-        <Route path="/contactus" element={<ContactUsPage/>} />
-        <Route path="/candidatedashboard" element={<DashBoardCandi/>} />
-        <Route path="/companydetailpage" element={<CompanyDetailPage/>} />
-        <Route path="/editresumepage" element={<EditResumePage/>} />
-
-      
+        <Route path="/faqpages" element={<FaqPages />} />
+        <Route path="/contactus" element={<ContactUsPage />} />
+        <Route path="/candidatedashboard" element={<DashBoardCandi />} />
+        <Route path="/companydetailpage" element={<CompanyDetailPage />} />
+        <Route path="/editresumepage" element={<EditResumePage />} />
+        <Route path="/plansubcriptionpage" element={<PlanSubcriptionpage />} />
+        <Route path="/companyjoblist" element={<CompanyJobList />} />
+        <Route path="/companyprofilepage" element={<CompanyProfilePage />} />
+        <Route
+          path="/companydashboardpage"
+          element={<CompanyDashboardPage />}
+        />
       </Routes>
     </>
   );

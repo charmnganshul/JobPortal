@@ -13,10 +13,7 @@ import {
 } from "react-icons/fa";
 
 const Sidebar = () => {
-
   const navigate = useNavigate();
-
-
   return (
     <div className="flex w-[70%] flex-col text-gray-500 rounded-[5px] shadow-lg h-[50vh] border">
       <div className="flex items-center justify-start px-4 gap-3 rounded-[5px] py-2 mb-2 bg-[#00A7AC] w-[100%] ">
@@ -36,7 +33,10 @@ const Sidebar = () => {
           <FaBookmark className="text-gray-500" />
           <span className="text-gray-500">Bookmark Jobs</span>
         </li>
-        <li onClick={()=>navigate("/editresumepage")} className="flex items-center space-x-3 cursor-pointer">
+        <li
+          onClick={() => navigate("/editresumepage")}
+          className="flex items-center space-x-3 cursor-pointer"
+        >
           <FaEdit className="text-gray-500" />
           <span className="text-gray-500">Edit Resume</span>
         </li>

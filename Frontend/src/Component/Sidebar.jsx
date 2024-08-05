@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   FaUser,
   FaBriefcase,
@@ -8,11 +8,11 @@ import {
   FaCog,
   FaSignOutAlt,
   FaThLarge,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="   flex flex-col w-[20%]  text-gray-500  rounded-[5px]  h-[60vh]">
+    <div className="flex w-[70%] flex-col text-gray-500 rounded-[5px] shadow-lg h-[50vh] border">
       <div className="flex items-center justify-start px-4 gap-3 rounded-[5px] py-2 mb-2 bg-[#00A7AC] w-[100%] ">
         <FaThLarge className=" text-lg text-white " />
         <h1 className=" text-lg text-white  font-semibold">Dashboard</h1>

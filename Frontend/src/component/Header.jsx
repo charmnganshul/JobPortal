@@ -47,7 +47,7 @@ const Header = () => {
               <a
                 onClick={() => navigate("/")}
                 href="#home"
-                className="text-teal-700 font-semibold hover:text-gray-500 border hover:border-gray-500 px-6 cursor-pointer"
+                className="text-teal-700 font-semibold hover:text-gray-500  px-6 cursor-pointer"
               >
                 Home
               </a>
@@ -73,7 +73,7 @@ const Header = () => {
                       Job Listing
                     </button>
                     <button
-                    onClick={()=>navigate("/jobdetail")}
+                      onClick={() => navigate("/jobdetail")}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       Job Details
@@ -90,12 +90,12 @@ const Header = () => {
                 </button>
                 {dropDownPages && (
                   <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
-                    <a
-                      href="#link1"
+                    <button
+                    onClick={()=>navigate("/candidatedashboard")}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       Dashboard{" "}
-                    </a>
+                    </button>
                     <button
                       onClick={() => navigate("/postjob")}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -103,7 +103,7 @@ const Header = () => {
                       Post A Jobs{" "}
                     </button>
                     <button
-                      onClick={() => navigate("")}
+                      onClick={() => navigate("/faqpages")}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       FAQ{" "}
@@ -133,11 +133,12 @@ const Header = () => {
                 {dropDownEmployers && (
                   <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
                     <button
-                    onClick={() => navigate("/companylisting")}
+                      onClick={() => navigate("/companylisting")}
                       className="block
                        px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-Comapny Listing                    </button>
+                      Comapny Listing{" "}
+                    </button>
                     <a
                       href="#link2"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -147,12 +148,12 @@ Comapny Listing                    </button>
                   </div>
                 )}
               </div>
-              <a
-                href="#contact"
+              <button
+              onClick={()=>{navigate("/contactus")}}
                 className="text-gray-700 hover:text-teal-500 cursor-pointer"
               >
                 Contact
-              </a>
+              </button>
             </nav>
             <div className="flex items-center justify-between gap-8">
               <button className="relative">

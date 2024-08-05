@@ -8,17 +8,17 @@ function EditResumePage() {
     const [profile,setProfile] = useState(false)
     const [education,setEducation] = useState(false)
     const [professionalInfo,setProfessionalInfo] = useState(false)
-  return (
-    <div>
+    return (
+       <div>
         <Header/>
-        <div className='flex p-[40px] gap-5'>
+        <div  className='flex p-[40px] gap-5'>
         <Sidebar/>
         <div className='w-[100%] p-[20px] flex flex-col gap-3'>
         <div className='w-[94%] flex gap-4'>
-            <button onClick={()=>{ setProfile(false);setEducation(false);setProfessionalInfo(false);setBasicInfo(true)}} className='h-[7vh] w-[14.5%] border  rounded-md hover:bg-[#00A7AC]'>Basic Information</button>
-            <button onClick={()=>{ setEducation(false);setBasicInfo(false);setProfessionalInfo(false);setProfile(true)}} className='h-[7vh] w-[14.5%] border  rounded-md hover:bg-[#00A7AC]'>Profile</button>
-            <button onClick={()=>{ setBasicInfo(false);setProfessionalInfo(false);setProfile(false);setEducation(true)}} className='h-[7vh] w-[14.5%] border rounded-md  hover:bg-[#00A7AC]'>Education</button>
-            <button onClick={()=>{ setBasicInfo(false);setEducation(false);setProfile(false);setProfessionalInfo(true)}}className='h-[7vh] w-[14.5%] border rounded-md  hover:bg-[#00A7AC]'>Professional Info</button>
+        <button onClick={()=>{ setProfile(false);setEducation(false);setProfessionalInfo(false);setBasicInfo(true)}} className='h-[7vh] w-[14.5%] border  rounded-md hover:bg-[#00A7AC]'>Basic Information</button>
+        <button onClick={()=>{ setEducation(false);setBasicInfo(false);setProfessionalInfo(false);setProfile(true)}} className='h-[7vh] w-[14.5%] border  rounded-md hover:bg-[#00A7AC]'>Profile</button>
+        <button onClick={()=>{ setBasicInfo(false);setProfessionalInfo(false);setProfile(false);setEducation(true)}} className='h-[7vh] w-[14.5%] border rounded-md  hover:bg-[#00A7AC]'>Education</button>
+        <button onClick={()=>{ setBasicInfo(false);setEducation(false);setProfile(false);setProfessionalInfo(true)}}className='h-[7vh] w-[14.5%] border rounded-md  hover:bg-[#00A7AC]'>Professional Info</button>
         </div>
         <div className=' w-[60%] relative  bg-yellow-300'>
         {profile == true &&
@@ -275,14 +275,11 @@ function EditResumePage() {
                 </div>
             </form>
         </div>}
-        
         </div>
         </div>
          </div>
-
-       <Footer/> 
+      <Footer/> 
     </div>
   )
 }
-
 export default EditResumePage

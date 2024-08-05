@@ -139,7 +139,7 @@ const Header = () => {
                     >
                       Comapny Listing{" "}
                     </button>
-                    <a onClick={()=>navigate("/companydetailpage")}
+                    <a 
                       href=""
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >

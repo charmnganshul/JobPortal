@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Image from "../assets/profile.jpg";
 
 const CompanyDashboard = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const navigate = useNavigate()
 
   return (
     <div className="flex justify-center items-start width-[100%] p-24  bg-red-100 ">
@@ -71,8 +72,8 @@ const CompanyDashboard = () => {
                 Bookmark Jobs
               </Link>
             </li>
-            <li className="hover:bg-gray-200 cursor-pointer py-2 rounded-md">
-              <Link to="/editresume">
+            <li onClick={()=>navigate("/editresumepage")} className="hover:bg-gray-200 cursor-pointer py-2 rounded-md">
+              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5 inline-block mr-2"
@@ -82,7 +83,7 @@ const CompanyDashboard = () => {
                   <path d="M17 3a1 1 0 000 2h-1.586a1 1 0 01-.707.293l-2.121 2.121A1 1 0 019.414 9.146l-2.121 2.121a1 1 0 01-.707.293H3a1 1 0 000 2h1.586a1 1 0 01.707.293l2.121 2.121A1 1 0 019.414 15.854l2.121 2.121a1 1 0 01.707.293H17a1 1 0 000-2h-1.586a1 1 0 01-.707-.293l-2.121-2.121A1 1 0 0111.586 11.707l-2.121-2.121a1 1 0 01-.707-.293H3a1 1 0 000-2h14zm-1 10a1 1 0 100 2 1 1 0 000-2z" />
                 </svg>
                 Edit Resume
-              </Link>
+              
             </li>
             <li className="hover:bg-gray-200 cursor-pointer py-2 rounded-md">
               <Link to="/viewresume">

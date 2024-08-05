@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-// import CompanyDashboard from "../component/CandidateDashBoard";
+import CompanyDashboard from "../component/CandidateDashBoard";
 import Sidebar from "../component/Sidebar";
 import UserProfile from "../component/UserProfile";
 import JobTable from "../component/JobTable";

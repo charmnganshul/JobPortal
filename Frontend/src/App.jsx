@@ -11,6 +11,8 @@ import JobDetailPage from "./pages/JobDetailPage";
 import FaqPages from "./pages/FaqPages";
 import ContactUsPage from "./pages/ContactUsPage";
 import DashBoardCandi from "./pages/DashBoardCandi";
+import CompanyDetailPage from "./pages/CompanyDetailPage";
+import EditResume from "./component/EditResume";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/faqpages" element={<FaqPages/>} />
         <Route path="/contactus" element={<ContactUsPage/>} />
         <Route path="/candidatedashboard" element={<DashBoardCandi/>} />
+        <Route path="/companydetailpage" element={<CompanyDetailPage/>} />
+        <Route path="/editresume" element={<EditResume/>} />
       </Routes>
     </>
   );

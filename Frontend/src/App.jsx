@@ -17,10 +17,13 @@ import PlanSubcriptionpage from "./pages/PlansSubsriptionPage";
 import CompanyJobList from "./pages/CompanyJobList";
 import CompanyProfilePage from "./pages/CompanyProfilePage";
 import CompanyDashboardPage from "./pages/CompanyDashboardPage";
+import {store} from "./pages/store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -43,7 +46,7 @@ function App() {
           element={<CompanyDashboardPage />}
         />
       </Routes>
-    </>
+    </Provider>
   );
 }
 

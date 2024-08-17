@@ -1,3 +1,4 @@
+import { faL } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -14,11 +15,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md py-4">
       <div
-        onMouseLeave={() => {
-          setDropDownFindJobs(false);
-          setDropDownPages(false);
-          setDropDownEmployers(false);
-        }}
+        
         className="mx-auto flex justify-between items-center px-10 "
       >
         {/* Logo */}
@@ -47,116 +44,125 @@ const Header = () => {
               <a
                 onClick={() => navigate("/")}
                 href="#home"
-                className="text-teal-700 font-semibold hover:text-gray-500  px-6 cursor-pointer"
+                className="text-teal-700 font-semibold hover:text-gray-500  px-6 cursor-pointer pb-3"
               >
                 Home
               </a>
               <div className="relative">
                 <button
                   onMouseOver={() => setDropDownFindJobs(true)}
-                  className="text-gray-700 hover:text-teal-500 cursor-pointer"
+                  onMouseLeave={() => setDropDownFindJobs(false)}
+                  className="text-gray-700 hover:text-teal-500 cursor-pointer pb-3"
                 >
                   Find Jobs
+                  {dropDownFindJobs && (
+                    <div className="absolute left-0  mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
+                      <button
+                        onClick={() => navigate("/jobcategory")}
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
+                      >
+                        Job Category
+                      </button>
+                      <button
+                        onClick={() => navigate("/joblisting")}
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
+                      >
+                        Job Listing
+                      </button>
+                      <button
+                        onClick={() => navigate("/jobdetail")}
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
+                      >
+                        Job Details
+                      </button>
+                    </div>
+                  )}
                 </button>
-                {dropDownFindJobs && (
-                  <div className="absolute left-0  mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
-                    <button
-                      onClick={() => navigate("/jobcategory")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Job Category
-                    </button>
-                    <button
-                      onClick={() => navigate("/joblisting")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Job Listing
-                    </button>
-                    <button
-                      onClick={() => navigate("/jobdetail")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Job Details
-                    </button>
-                  </div>
-                )}
               </div>
               <div className="relative">
                 <button
                   onMouseOver={() => setDropDownPages(true)}
-                  className="text-gray-700 hover:text-teal-500 cursor-pointer"
+                  onMouseLeave={() => setDropDownPages(false)}
+                  className="text-gray-700 hover:text-teal-500 cursor-pointer pb-3"
                 >
                   Pages
-                </button>
-                {dropDownPages && (
+                  {dropDownPages && (
                   <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
                     <button
-                    onClick={()=>navigate("/candidatedashboard")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      onClick={() => navigate("/candidatedashboard")}
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
                     >
                       Dashboard{" "}
                     </button>
                     <button
                       onClick={() => navigate("/postjob")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
                     >
                       Post A Jobs{" "}
                     </button>
                     <button
                       onClick={() => navigate("/faqpages")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
                     >
                       FAQ{" "}
                     </button>
                     <button
                       onClick={() => navigate("/signuppage")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
                     >
                       Register{" "}
                     </button>
                     <button
                       onClick={() => navigate("/login")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-[100%] text-left hover:text-[#00A7AC]"
                     >
                       LogIn{" "}
                     </button>
                   </div>
                 )}
+                </button>
+              
               </div>
               <div className="relative">
                 <button
                   onMouseOver={() => setDropDownEmployers(true)}
-                  className="text-gray-700 hover:text-teal-500 cursor-pointer"
+                  onMouseLeave={() => setDropDownEmployers(false)}
+                  className="text-gray-700 hover:text-teal-500 cursor-pointer pb-3"
                 >
                   Employers
-                </button>
-                {dropDownEmployers && (
-                  <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
+                  {dropDownEmployers && (
+                  <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-20">
                     <button
-                      onClick={() =>navigate("/companylisting")}
-                      className="block
-                       px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      onClick={() => navigate("/companylisting")}
+                      className="block w-[100%] text-left
+                       px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#00A7AC]"
                     >
                       Company Listing{" "}
                     </button>
-                    <button onClick={()=>navigate("/companydetailpage")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    <button
+                      onClick={() => navigate("/companydetailpage")}
+                      className="block w-[100%] text-left
+                       px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#00A7AC]"
                     >
-                    
                       Company Details
                     </button>
-                    <button onClick={()=>navigate("/companydashboardpage")}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    <button
+                      onClick={() => navigate("/companydashboardpage")}
+                      className="block w-[100%] text-left
+                       px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#00A7AC] transition-all"
                     >
-                    
                       Company DashBoard
                     </button>
                   </div>
                 )}
+                </button>
+               
               </div>
               <button
-              onClick={()=>{navigate("/contactus")}}
-                className="text-gray-700 hover:text-teal-500 cursor-pointer"
+                onClick={() => {
+                  navigate("/contactus");
+                }}
+                className="text-gray-700 hover:text-teal-500 cursor-pointer pb-3"
               >
                 Contact
               </button>

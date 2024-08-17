@@ -25,7 +25,7 @@ const activities = [
 
 const RecentActivity = () => {
   return (
-    <div className=" bg-gray-300 shadow-lg rounded-lg p-4 w-[70%]">
+    <div className=" bg-white shadow-lg rounded-lg p-4 w-[70%] mt-4">
       <h2 className="text-xl font-semibold mb-4">Recent Activity:</h2>
       <ul>
         {activities.map((activity, index) => (

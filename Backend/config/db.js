@@ -1,3 +1,4 @@
+// coonect Node.js with database
 const mongoose = require("mongoose");
 
 const connectDb = async()=>{

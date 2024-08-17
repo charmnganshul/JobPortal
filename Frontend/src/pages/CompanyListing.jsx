@@ -8,11 +8,9 @@ function CompanyListing() {
     <div>
       <Header></Header>
       <PostAJob />
-
       <div className="px-16 py-8">
         <Filter />
       </div>
-
       <Footer />
     </div>
   );
